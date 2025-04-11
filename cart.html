@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/Assets/Logos/Favicon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feshkoola</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="logo">
+          <a href="account.html"
+            ><img src="Assets/Logos/Feshkoola Logo.png" alt="Logo" class="logo"
+          /></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li id="selectedNav"><a id="selectedNav" href="shop.html">Shop</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="email.html">Email</a></li>
+      </ul>
+    </nav>
+    <div class="cart fade-in-section" style="height: auto">
+      <div class="subheading">CART</div>
+      <div class="left fade-in-section" style="height: auto; margin: 0px">
+        <div id="cart-container" class="cart-container">
+          <!-- Cart items will be displayed here -->
+        </div>
+      </div>
+      <div class="right fade-in-section" style="height: auto; margin: 0px; align-items: center;">
+        <label style="float: left; margin: 10px; margin-right:50%; padding:10px; margin-left:50px; font-size: 20px; font-family: Cascadia Code;" for="address">Shipping Address:</label>
+        <input type="text" id="address" name="address" style="float: left; margin: 50px; padding: 30px; margin-top:0px;" placeholder="Enter your address" required />
+        <button class="purchase" type="button" onclick="buyNow()">Buy Now</button>
+      </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  </body>
+</html>
